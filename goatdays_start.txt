@@ -1,0 +1,4 @@
+su sdtdserver
+./sdtdserver start
+^]
+exit

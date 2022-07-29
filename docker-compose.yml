@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  goatbot:
+    image: liquidgoat/goatbot
+    container_name: goatbot
+    networks:
+      - goatbot
+      - goatdays_default
+      - goatheim_default
+networks:
+    goatbot:
+      name: goatbot
+    goatdays_default:
+      name: goatdays_default
+    goatheim_default:
+      name: goatheim_default
