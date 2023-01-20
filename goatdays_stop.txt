@@ -1,4 +1,0 @@
-su sdtdserver
-./sdtdserver stop
-^]
-exit
