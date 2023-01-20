@@ -91,7 +91,7 @@ client.on('interactionCreate', async interaction => {
 	if (interaction.customId === "goatdays_start") {
 		await interaction.reply('Started Goatdays, may you scam the traders and chug yucca smoothies');
 		console.log('goatdays start clicked!');
-		exec('cd /home/neal/goatdays && docker-compose up -d');
+		exec('cd {directory}/goatdays && docker compose up -d');
 		await wait(300000);
 		await interaction.deleteReply();
 	}
@@ -99,7 +99,7 @@ client.on('interactionCreate', async interaction => {
 	if (interaction.customId === "goatheim_start") {
 		await interaction.reply('Started Goatheim, may you vanquish the dastardly deathsquitos');
 		console.log('goatheim start clicked!');
-		exec('cd /home/neal/goatheim && docker-compose up -d');
+		exec('cd {directory}/goatheim && docker compose up -d');
 		await wait(300000);
 		await interaction.deleteReply();
 	}
@@ -107,7 +107,7 @@ client.on('interactionCreate', async interaction => {
 	if (interaction.customId === "goatcraft_start") {
 		await interaction.reply('Started Goatcraft, may you scam the villagers and abuse the chickens');
 		console.log('goatcraft start clicked!');
-		exec('cd /home/neal/goatcraft && docker-compose up -d');
+		exec('cd {directory}/goatcraft && docker compose up -d');
 		await wait(300000);
 		await interaction.deleteReply();
 	}
@@ -115,7 +115,7 @@ client.on('interactionCreate', async interaction => {
 	if (interaction.customId === "goatfactory_start") {
 		await interaction.reply('Started Goatfactory, may your power grid never crash');
 		console.log('goatfactory start clicked!');
-		exec('cd /home/neal/goatfactory && docker-compose up -d');
+		exec('cd {directory}/goatfactory && docker compose up -d');
 		await wait(300000);
 		await interaction.deleteReply();
 	}
@@ -123,7 +123,7 @@ client.on('interactionCreate', async interaction => {
 	if (interaction.customId === "goatdays_stop") {
 		await interaction.reply('Stopped Goatdays, Trader Joel rejoices');
 		console.log('goatdays stop clicked!');
-		exec('cd /home/neal/goatdays && docker-compose stop');
+		exec('cd {directory}/goatdays && docker compose stop');
 		await wait(300000);
 		await interaction.deleteReply();
 	}
@@ -131,7 +131,7 @@ client.on('interactionCreate', async interaction => {
 	if (interaction.customId === "goatheim_stop") {
 		await interaction.reply('Stopped Goatheim, the greylings rejoice');
 		console.log('goatheim stop clicked!');
-		exec('cd /home/neal/goatheim && docker-compose stop');
+		exec('cd {directory}/goatheim && docker compose stop');
 		await wait(300000);
 		await interaction.deleteReply();
 	}
@@ -139,7 +139,7 @@ client.on('interactionCreate', async interaction => {
 	if (interaction.customId === "goatcraft_stop") {
 		await interaction.reply('Stopped Goatcraft, the abused villagers rejoice');
 		console.log('goatcraft stop clicked!');
-		exec('cd /home/neal/goatcraft && docker-compose stop');
+		exec('cd {directory}/goatcraft && docker compose stop');
 		await wait(300000);
 		await interaction.deleteReply();
 	}
@@ -147,7 +147,7 @@ client.on('interactionCreate', async interaction => {
 	if (interaction.customId === "goatfactory_stop") {
 		await interaction.reply('Stopped Goatfactory, the power grid rests...');
 		console.log('goatfactory stop clicked!');
-		exec('cd /home/neal/goatfactory && docker-compose stop');
+		exec('cd {directory}/goatfactory && docker compose stop');
 		await wait(300000);
 		await interaction.deleteReply();
 	}
