@@ -2,14 +2,14 @@
 Description=GoatBot Discord bot to start/stop game server containers.
 
 [Service]
-ExecStart=/home/neal/goatbot/index.js
+ExecStart=$directory/index.js
 Restart=always
-User=neal
+User=$user
 # Note Debian/Ubuntu uses 'nogroup', RHEL/Fedora uses 'nobody'
 Group=nogroup
 Environment=PATH=/usr/bin:/usr/local/bin
 Environment=NODE_ENV=production
-WorkingDirectory=/home/neal/goatbot
+WorkingDirectory=$directory
 
 [Install]
 WantedBy=multi-user.target
