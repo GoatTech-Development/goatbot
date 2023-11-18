@@ -1,9 +1,13 @@
 # goatbot
-discord bot for goats
+Discord bot for goats
 
 # Registering Commands:
-node deploy-commands.js
-# Successfully registered application commands.
+```console
+foo@bar:~$ node deploy-commands.js
+Successfully registered application commands.
+```
 
 # Restarting daemon:
+```console
 sudo service goatbot restart
+```
