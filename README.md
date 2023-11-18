@@ -1,4 +1,4 @@
-# goatbot
+# GoatBot
 Discord bot for goats
 
 # Registering Commands:
