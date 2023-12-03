@@ -60,7 +60,7 @@ client.on('interactionCreate', async interaction => {
 		else {
 			await interaction.reply('Starting Goatdays, may you scam the traders and chug yucca smoothies');
 			console.log('goatdays start clicked!');
-			exec('cd /home/neal/goatdays/alpha21 && docker compose up -d');
+			exec('cd $HOME/goatdays/alpha21 && docker compose up -d');
 			await wait(300000);
 			await interaction.deleteReply();
 		}
@@ -70,7 +70,7 @@ client.on('interactionCreate', async interaction => {
 		if (exec('docker ps | grep sdtd')) {
 			await interaction.reply('Stopping Goatdays, Trader Joel rejoices');
 			console.log('goatdays stop clicked!');
-			exec('cd /home/neal/goatdays/alpha21 && docker compose stop');
+			exec('cd $HOME/goatdays/alpha21 && docker compose stop');
 			await wait(300000);
 			await interaction.deleteReply();
 		}
